@@ -1,0 +1,46 @@
+<!-- <div class="login">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+   
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="txtusername" formControlName="username">
+
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="txtpassword" formControlName="password">
+
+        <button>Log In</button>
+     
+
+</div> -->
+
+
+
+
+<div class="card">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+        <form [formGroup]="loginform" (ngSubmit)="login()">
+        <div class="container">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Email or Phone" id="txtusername" formControlName="username">
+
+        </div>
+        <div class="container">
+
+            
+           
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="txtpassword" formControlName="password">
+
+        </div>
+        <button type="button" class="btn btn-primary">Login</button>
+    </form>
+    </div>
+  </div>
