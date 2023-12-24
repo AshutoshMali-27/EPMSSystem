@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
 
        console.log("login sucessfully");      
        
-       this.router.navigate(['/sidebar']);
+       this.router.navigate(['/navbar']);
 
     }
     else{

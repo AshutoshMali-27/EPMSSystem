@@ -9,19 +9,29 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { EmployeeRegistrationComponent } from './Components/employee-registration/employee-registration.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserApprovalComponent } from './Components/user-approval/user-approval.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NavbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    EmployeeRegistrationComponent,
+    UserApprovalComponent
+  
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
