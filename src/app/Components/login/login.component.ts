@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup ,FormControl } from '@angular/forms';
 
 import { Router } from '@angular/router';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 
 @Component({
@@ -35,7 +36,7 @@ export class LoginComponent implements OnInit {
 
        console.log("login sucessfully");      
        
-       this.router.navigateByUrl("navbar")
+       this.router.navigate(['/sidebar']);
 
     }
     else{
