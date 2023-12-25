@@ -19,6 +19,15 @@ export class UserApprovalComponent implements OnInit {
       console.log(this.user); 
     });
 
+
+    
   }
+
+  ApprovedUser(){
+    
+  }
+
+
+  
 
 }

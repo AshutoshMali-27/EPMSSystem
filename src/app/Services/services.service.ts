@@ -34,5 +34,9 @@ export class ServicesService {
     return this.http.get<any[]>(this.baseUrl+'GetUsers'); 
       }
 
+  updateUserStatus(param:any){
+    return this.http.put(this.baseUrl+'updateUserStatus/', param); 
+      }
+
 
 }

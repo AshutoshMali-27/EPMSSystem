@@ -3,14 +3,16 @@
         <th>Emplyee FirstNAme</th>
         <th>Employee LastName</th>
         <th>Employee Email</th>
-        <th>Employee Email</th>
-        <th>Employee Email</th>
+        <th>Approval Status</th>
     </tr>
     <tr *ngFor="let item of user">
-        <td>{{item.id}}</td>
-        <td>{{item.email}}</td>
+
         <td>{{item.firstName}}</td>
-        <td>{{item.middlename}}</td>
         <td>{{item.lastname}}</td> 
+        <td>{{item.email}}</td>
+        <td *ngIf="item.approvalStatus===0">  pending </td>
+        <td *ngIf="item.approvalStatus===1"> Approval</td>
+        <td *ngIf="item.approvalStatus===-1"> Rejected</td>
+        <td><button type="submit" (click)="ApprovedUser()" >Approval User</button></td>
     </tr>
 </table>

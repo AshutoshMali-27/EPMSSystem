@@ -21,4 +21,5 @@ export interface registerUser {
     firstname:string;
     lastname:string;
     email:string;
+    
   }
